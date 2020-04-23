@@ -1,4 +1,7 @@
-# flutter_whatsapp_redesign
+# Flutter Whatsapp Redesign
+
+## Design By
+[Whatsapp Redesign at UpLabs](https://www.uplabs.com/posts/whatsapp-redesign-73fcb5f1-ccec-4622-a8eb-9353d8fe4f62)
 
 A new Flutter project.
 
