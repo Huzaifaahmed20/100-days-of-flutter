@@ -5,7 +5,11 @@
 
 ## Screenshots
 
-[<img src="./Screenshots/loginscreen.png" width="200"/>](loginscreen.png)
+#### Registration Screen
+[<img src="./screenshots/registration.png" width="200"/>](registration.png)
+
+#### Phone Verification Screen
+[<img src="./screenshots/phoneverify.png" width="200"/>](phoneverify.png)
 
 
 

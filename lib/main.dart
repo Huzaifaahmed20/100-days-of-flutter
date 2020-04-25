@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_whatsapp_redesign/screens/Registration.dart';
+
+//screens
+import './screens/HomeScreen.dart';
+import './screens/PhoneVerifyScreen.dart';
+import './screens/Registration.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,6 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Whatsapp Redesign',
       theme: ThemeData(
+        fontFamily: 'Poppins',
         primaryColor: Colors.green.shade500,
         textTheme: TextTheme(
           title: TextStyle(
@@ -20,9 +25,7 @@ class MyApp extends StatelessWidget {
             fontSize: 19,
           ),
           subtitle: TextStyle(
-            color: Colors.grey,
-            fontSize: 18,
-          ),
+              color: Colors.grey, fontSize: 18, fontWeight: FontWeight.bold),
         ),
         canvasColor: Colors.white,
         appBarTheme: AppBarTheme(
@@ -30,6 +33,10 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: RegistrationScreen(),
+      routes: {
+        PhoneVerifyScreen.routeName: (_) => PhoneVerifyScreen(),
+        HomeScreen.routeName: (_) => HomeScreen(),
+      },
     );
   }
 }
