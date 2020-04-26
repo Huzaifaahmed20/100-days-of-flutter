@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Whatsapp Redesign',
       theme: ThemeData(
+        primaryIconTheme: IconThemeData(color: Colors.black),
         fontFamily: 'Poppins',
         primaryColor: Colors.green.shade500,
         textTheme: TextTheme(

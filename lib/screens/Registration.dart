@@ -18,11 +18,11 @@ class RegistrationScreen extends StatelessWidget {
           Navigator.of(context).pushNamed(PhoneVerifyScreen.routeName);
         },
       ),
-      body: Column(
-        children: <Widget>[
-          MainScreenHeader(),
-          Expanded(
-            child: Column(
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            MainScreenHeader(),
+            Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
                 Padding(
@@ -51,11 +51,11 @@ class RegistrationScreen extends StatelessWidget {
                   ),
                 ),
                 Row(
-                  mainAxisSize: MainAxisSize.min,
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
                     Container(
-                      width: 40,
+                      padding: const EdgeInsets.only(left: 20),
+                      width: MediaQuery.of(context).size.width * 0.20,
                       child: TextField(
                         decoration: new InputDecoration(
                           hintText: '+92',
@@ -71,8 +71,8 @@ class RegistrationScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.only(left: 20),
-                      width: 320,
+                      padding: const EdgeInsets.only(right: 20),
+                      width: MediaQuery.of(context).size.width * 0.70,
                       child: TextField(
                         decoration: new InputDecoration(
                           suffixIcon: Icon(
@@ -94,9 +94,9 @@ class RegistrationScreen extends StatelessWidget {
                   ],
                 )
               ],
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }
