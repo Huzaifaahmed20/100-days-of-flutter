@@ -13,6 +13,6 @@ class UserProfile {
         avatar:
             'https://s3.amazonaws.com/uifaces/faces/twitter/_pedropinho/128.jpg',
         placeholderAvatar:
-            'https://www.pngkey.com/png/full/950-9501315_katie-notopoulos-katienotopoulos-i-write-about-tech-user.png');
+            'assets/images/placeholder.png');
   }
 }
