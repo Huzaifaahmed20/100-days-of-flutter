@@ -38,4 +38,22 @@ class BuilderMethodsWidgets {
       ),
     );
   }
+
+  Widget customCircleAvatar({avatarImage, placeholderImage, height, width}) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(100),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(100),
+          // border: Border.all(color: Colors.grey),
+        ),
+        height: height,
+        width: width,
+        child: FadeInImage.assetNetwork(
+          placeholder: placeholderImage,
+          image: avatarImage,
+        ),
+      ),
+    );
+  }
 }
