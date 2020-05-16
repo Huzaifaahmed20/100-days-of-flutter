@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  camera:  
   flutter_svg: ^0.17.4
   flutter_slidable: ^0.5.4
 

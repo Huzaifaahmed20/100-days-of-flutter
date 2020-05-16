@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
           color: Colors.white,
         ),
       ),
-      home: RegistrationScreen(),
+      home: HomeScreen(),
       routes: {
         PhoneVerifyScreen.routeName: (_) => PhoneVerifyScreen(),
         HomeScreen.routeName: (_) => HomeScreen(),
